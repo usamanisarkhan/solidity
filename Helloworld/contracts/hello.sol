@@ -7,4 +7,5 @@ contract Helloworld
     function setmyname (string memory _name) public {
         name=_name;
     }
+
 }
