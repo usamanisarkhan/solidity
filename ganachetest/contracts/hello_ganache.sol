@@ -10,10 +10,14 @@ contract hello_ganache {
 
     function setuserinfo (int _age, string calldata _name, bool _student) public
     {
-        age = _age;
-        name = _name;
+        age =_age;
+        name =_name;
         is_student= _student;
-        
+
     }
 
+    function getuserinfo() public view returns (int , string memory, bool)
+    {
+        return (age, name, is_student);
+    }
 }
